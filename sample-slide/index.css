@@ -1,0 +1,76 @@
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			background-color: #263238;
+		}
+		.imageBox {
+			position: relative;
+			width: 400px;
+			height: 200px;
+			margin: 50px auto;
+			overflow: hidden;
+			border: 10px solid #fff;
+			border-radius: 10px;
+		}
+		.imageList {
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
+		.imageList li {
+			float: left;
+			width: 400px;
+			height: 200px;
+			list-style: none;
+		}
+		.imageList li img {
+			width: 100%;
+		}
+		.navigationWrap {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			line-height: 15px;
+			
+		}
+		.navigationWrap .navigation-next, 
+		.navigationWrap .navigation-prev {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-top: 2px solid #fff;
+			border-right: 2px solid #fff;
+			transform: rotate(45deg);
+			cursor: pointer;
+		}
+		.navigationWrap .navigation-prev {
+			margin-left: 10px;
+			transform: rotate(-135deg);
+		}
+		.navigationWrap .navigation-next {
+			float: right;
+			margin-right: 10px;
+		}
+		.pagination {
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+		.pagination span {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin-left: 10px;
+			border-radius: 50%;
+			background-color: rgba(0,0,0, .5);
+			border: 1px solid #ccc;
+			cursor: pointer;
+		}
+		.pagination .current {
+			background-color: #f00;
+		}
