@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片滚动</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="imageBox">
+		<ul class="imageList">
+			<li><img src="images/1.jpg"></li>
+			<li><img src="images/2.jpg"></li>
+			<li><img src="images/3.jpg"></li>
+			<li><img src="images/4.jpg"></li>
+			<li><img src="images/5.jpg"></li>
+		</ul>
+		<div class="pagination">	
+		</div>
+	</div>
+	<script src="slide.js"></script>
+	<script>
+		var carousel = new Slide(".imageBox", {
+			pagination: true, //是否显示分页器
+			navigation: true, //是否显示上下按钮
+			speed: 2000,	  //轮播速读
+			mode: 'vertical'  //轮播方向 //horizontal为水平， vertical为垂直方向
+		});
+	</script>
+</body>
+</html>
